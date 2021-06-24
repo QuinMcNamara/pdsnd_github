@@ -10,13 +10,11 @@ The goal of this project was to use Python to create a script that will allow a 
 The program works by allowing a user to select a city, month, and day of the week to be analyzed for multiple outputs of information. While selecting a city is mandatory, the user could select all for months and/or days of the week.
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
+chicago.csv  
+new_york_city.csv  
+washington.csv  
 
-```
-all three contain bike share date for the specified city and were provided through the Udacity Python for Data Science Nanodegree
-```
+`all three contain bike share date for the specified city and were provided through the Udacity Python for Data Science Nanodegree`
 
 ### Resources
 
