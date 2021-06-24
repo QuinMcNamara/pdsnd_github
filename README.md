@@ -1,17 +1,26 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+06/24/2021
 
 ### Project Title
-Replace the Project Title
+Analyze BikeShare Data with Python
 
 ### Description
-Describe what your project is about and what it does
+The goal of this project was to use Python to create a script that will allow a user to evaluate Bike Share data from one of three cities.
+
+The program works by allowing a user to select a city, month, and day of the week to be analyzed for multiple outputs of information. While selecting a city is mandatory, the user could select all for months and/or days of the week.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+- all three contain bike share date for the specified city and were provided through the Udacity Python for Data Science Nanodegree
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+### Resources
+
+During the writing of this program, I referred to the following websites for assistance with a particular question:
+`https://stackoverflow.com/questions/55719762how-to-calculate-mode-over-two-columns-in-a-python-dataframe`
+
+`https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas`
 
