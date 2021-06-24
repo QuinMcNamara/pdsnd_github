@@ -90,7 +90,7 @@ def load_data(city, month, day):
 
     # extract month and day of week from Start Time
     df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['day_of_week'] = df['Start Time'].dt.day_name()
 
     # filter by month if applicable
     if month != 'all':
