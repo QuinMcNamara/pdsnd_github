@@ -13,7 +13,10 @@ The program works by allowing a user to select a city, month, and day of the wee
 chicago.csv
 new_york_city.csv
 washington.csv
-- all three contain bike share date for the specified city and were provided through the Udacity Python for Data Science Nanodegree
+
+```
+all three contain bike share date for the specified city and were provided through the Udacity Python for Data Science Nanodegree
+```
 
 ### Resources
 
