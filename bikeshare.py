@@ -225,6 +225,8 @@ def user_stats(df):
 
 
 def view_raw_data(df):
+    # asks user for input - if "yes", displays the next 5 lines of raw bikeshare data
+    # this process will repeat until user inputs "no"
     count = 0
     while True:
         more_data = valid_input('Would you like to view 5 lines of raw data?\n'
