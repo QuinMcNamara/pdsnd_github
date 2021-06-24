@@ -90,7 +90,7 @@ def load_data(city, month, day):
 
     # extract month and day of week from Start Time
     df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['day_of_week'] = df['Start Time'].dt.day_name()
 
     # filter by month if applicable
     if month != 'all':
@@ -225,23 +225,19 @@ def user_stats(df):
 
 
 def view_raw_data(df):
+    # asks user for input - if "yes", displays the next 5 lines of raw bikeshare data
+    # this process will repeat until user inputs "no"
     count = 0
-    raw_data = valid_input('Would you like to view the first 5 lines of raw data?\n'
-                            'Please enter yes or no:\n', ['yes', 'no'])
-    if raw_data == 'yes':
-        print(df.head())
-        more_data = 'yes'
-        while more_data == 'yes':
+    while True:
+        more_data = valid_input('Would you like to view 5 lines of raw data?\n'
+                                'Please enter yes or no:\n', ['yes', 'no'])
+        if more_data == 'yes':
+            print(df.iloc[count:count+5])
             count += 5
-            more_data = valid_input('Would you like to see the next 5 lines?\n'
-                                    'Please enter yes or no:\n', ['yes', 'no'])
-            if more_data == 'yes':
-                print(df.iloc[count:count+5])
-            else:
-                print('Thank you for using BikeShare Data')
-                break
-    else:
-        print('Thank you for using BikeShare Data')
+        else:
+            print('Thank you for using BikeShare Data')
+            break
+
 
 def main():
     while True:
